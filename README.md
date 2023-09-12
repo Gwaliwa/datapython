@@ -14,3 +14,12 @@ Finally setup your .gitconfig.
 git config --global user.name "bob"
 git config --global user.email bob@... (don't forget to restart your command line to make sure the config is reloaded)
 That's it you should be good to clone and checkout.
+
+
+eval $(ssh-agent -s)
+
+define where the keys are located
+ssh-add ~/.ssh/id_rsa
+
+Share
+https://stackoverflow.com/questions/2643502/git-how-to-solve-permission-denied-publickey-error-when-using-git
